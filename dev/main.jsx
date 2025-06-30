@@ -7,7 +7,13 @@ import ReactDOM from 'react-dom/client';
 // import { Soundz, SoundzProvider } from '../Soundz';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <div style={{ height: '100%', width: 'inherit', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', gap: '3rem', margin: 0, padding: 0 }}>
+  <div className="container">
+
+    {/* // *** Uncomment for testing this use case ***
+    <Soundz providedFX="firework">
+      <button onClick={() => console.log('Clicked!')}>Play Firework</button>
+    </Soundz>
+    */}
 
     {/*
     // *** Uncomment for testing this use case ***

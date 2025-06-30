@@ -259,11 +259,7 @@ export function Soundz(props: SoundzProps) {
     }
 
     try {
-      const base =
-        apiBaseUrl ??
-        (typeof window !== 'undefined' && window.location.hostname === 'localhost'
-          ? ''
-          : 'https://soundzjs.vercel.app');
+      const base = apiBaseUrl || 'https://soundzjs.vercel.app';
 
       const res = await fetch(`${base}/api/sounds?sound=${fallbackFX}`);
       const contentType = res.headers.get('content-type');
@@ -278,6 +274,7 @@ export function Soundz(props: SoundzProps) {
       }
 
       const json = await res.json();
+
       if (json?.url) {
         soundCache.set(fallbackFX, json.url);
         setSoundUrl(json.url);
@@ -309,11 +306,7 @@ export function Soundz(props: SoundzProps) {
   };
 
   const handleHover = () => {
-    const base = (
-      typeof window !== 'undefined' && window.location.hostname === 'localhost'
-      ? 'http://localhost:3000'
-      : 'https://soundzjs.vercel.app'
-    );
+    const base = apiBaseUrl || 'https://soundzjs.vercel.app';
 
     if (hoverFX) {
       // Use Custom API Endpoint (user must include file extension - ex: boop.mp3).
