@@ -17,16 +17,9 @@
 
   <h3 style="font-weight: 700;">Built with <a style="color: #ff0072; text-decoration: none;" href="https://www.typescriptlang.org">TypeScript</a> & Powered by <a style="color: #ff0072; text-decoration: none;" href="https://howlerjs.com">Howler.js</a></h3>
 
-  <ul style="display: flex; flex-direction: column; justify-content: center; align-items: center; list-style-type: none;">
-    <div style="display: flex; flex-direction: column; align-items: flex-start;">
-      <li style="font-weight: 700;">✅ Lightweight</li>
-      <li style="font-weight: 700;">✅ Customizable</li>
-      <li style="font-weight: 700;">✅ Animated</li>
-      <li style="font-weight: 700;">✅ Fully-Accessible</li>
-      <li style="font-weight: 700;">✅ Developer-Friendly</li>
-      <li style="font-weight: 700;">✅ Batteries-Included</li>
-    </div>
-  </ul>
+<h3 align="center">
+✅ Animated<br />✅ Lightweight<br />✅ Customizable<br />✅ Fully-Accessible<br />✅ Batteries-Included<br />✅ Developer-Friendly
+</h3>
 
 </div>
 

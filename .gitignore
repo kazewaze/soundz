@@ -1,3 +1,7 @@
+# production
+/dist
+/build
+
 # dependencies
 /node_modules
 /.pnp
@@ -10,10 +14,6 @@
 
 # testing
 /coverage
-
-# production
-/dist
-/build
 
 # misc
 .DS_Store
